@@ -13,6 +13,8 @@ public class PolyAbsMainGrp8 {
                            [2] Balance Inquiry
                            [3] Withdraw
                            [4] Deposit""");
+        
+        System.out.println("Enter number of the transaction that you want to do: \n");
         int choice;
         choice = scan.nextInt();
         switch (choice) {
