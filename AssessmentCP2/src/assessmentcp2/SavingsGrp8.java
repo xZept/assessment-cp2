@@ -9,6 +9,6 @@ package assessmentcp2;
  *
  * @author Allen James Laxamana
  */
-public class SavingsGrp8 {
+public class SavingsGrp8 extends AccountGrp8 {
     
 }
