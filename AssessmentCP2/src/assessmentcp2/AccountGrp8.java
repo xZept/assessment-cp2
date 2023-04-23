@@ -8,6 +8,6 @@ package assessmentcp2;
  *
  * @author Allen James Laxamana
  */
-public class AccountGrp8 {
+public abstract class AccountGrp8 {
     
 }
