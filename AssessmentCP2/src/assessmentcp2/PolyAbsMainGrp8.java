@@ -7,12 +7,15 @@ public class PolyAbsMainGrp8 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         SavingsGrp8 obj = new SavingsGrp8(); // Object for SavingsGrp8
+        
+        while (true) {
         System.out.println("""
                            Banking Menu
                            [1] Banking Information
                            [2] Balance Inquiry
                            [3] Withdraw
-                           [4] Deposit""");
+                           [4] Deposit
+                           [5] Exit""");
         System.out.print("Enter the number of the transaction that you want to do: ");
         int choice;
         choice = scan.nextInt();
@@ -30,10 +33,20 @@ public class PolyAbsMainGrp8 {
                 break;
             case 3:
                 obj.withdrawAcct();
+                System.exit(0);
                 break;
             case 4:
                 obj.depositAcct();
+                System.exit(0);
                 break;
-        }          
+            case 5:
+                System.out.println("Thank you for using our service!");
+                System.exit(0);
+                break;
+            default:
+                System.out.println("That is an invalid choice. Please try again.");
+                break;
+        }      
+        }
     }  
 }
