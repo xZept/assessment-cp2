@@ -29,7 +29,7 @@ public abstract class AccountGrp8 {
         }
      
    
-    //public abstract void withdrawAcct();
+    public abstract double withdrawAcct();
     
-    //public abstract void depositAcct();   
+    public abstract double depositAcct();   
 }
