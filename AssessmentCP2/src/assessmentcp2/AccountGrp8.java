@@ -2,8 +2,10 @@ package assessmentcp2;
 
 public abstract class AccountGrp8 {
     
-    private String name, address;
-    private int number;
+    // Encapsulated constant variables
+    private final String name;
+    private final String address;
+    private final int number;
     
     // Assigns values to the variables
     public AccountGrp8() {

@@ -19,10 +19,17 @@ public class SavingsGrp8 extends AccountGrp8 {
     }
     
     // Assigns a initial amount to the variable balance
-    public void updateBalance(){
+    private void updateBalance(){
         balance += 3000.0;
     }
     
+    // Display the account details
+    public void displayInfo() {
+        System.out.println("Account Information");
+        System.out.println("Account Name: " + getAccName());
+        System.out.println("Account Number: " + getAccNum());
+        System.out.println("Address: " + getAdd());
+    }
     // Displays the balance for the balance inquiry
     public void displayBalance(){
         System.out.println("Balance Inquiry Transaction");
