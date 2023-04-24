@@ -7,6 +7,8 @@ public class PolyAbsMainGrp8 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         SavingsGrp8 obj = new SavingsGrp8(); // Object for SavingsGrp8
+        
+        // Prompt the user
         System.out.println("""
                            Banking Menu
                            [1] Banking Information
