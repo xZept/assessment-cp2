@@ -41,14 +41,14 @@ public class SavingsGrp8 extends AccountGrp8 {
         System.out.println("Withdrawal Transaction");
         System.out.print("Enter amount to be withdrawn: ");
         amount = scan.nextInt();
-        if (checkAmount(amount, balance) == true) {
+        if (checkAmount(amount, balance)) {
             balance -= amount;
             System.out.println("Hello " + super.getAccName() + "!");
         }
         else {
             System.out.println("Insufficient funds.");
         }  
-        System.out.println("Your current balance in your savings account is " + balance + ".");
+        displayBalance(super.getAccName(),balance);
     }
     
     @Override
@@ -58,7 +58,7 @@ public class SavingsGrp8 extends AccountGrp8 {
         amount = scan.nextInt();
         balance += amount;
         System.out.println("Hello " + super.getAccName() + "!");
-        System.out.println("Your current balance in your savings account is " + balance + ".");
+        displayBalance(super.getAccName(),balance);
     }
     
     // Checks if the amount is within the balance
