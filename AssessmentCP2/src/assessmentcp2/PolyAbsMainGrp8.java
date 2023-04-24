@@ -22,30 +22,26 @@ public class PolyAbsMainGrp8 {
         System.out.print("\n"); // Whitespace
         // Perform the action depending on the user's choice
         switch (choice) {
-            case 1: 
+            case 1 -> { 
                 System.out.println("Account Information");
                 System.out.println("Account Name: " + obj.getAccName());
                 System.out.println("Account Number: " + obj.getAccNum());
                 System.out.println("Address: " + obj.getAdd());
-                break;
-            case 2:
-                obj.displayBalance();
-                break;
-            case 3:
+                }
+            case 2 -> obj.displayBalance();
+            case 3 -> {
                 obj.withdrawAcct();
                 System.exit(0);
-                break;
-            case 4:
+                }
+            case 4 -> {
                 obj.depositAcct();
                 System.exit(0);
-                break;
-            case 5:
+                }
+            case 5 -> {
                 System.out.println("Thank you for using our service!");
                 System.exit(0);
-                break;
-            default:
-                System.out.println("That is an invalid choice. Please try again.");
-                break;
+                }
+            default -> System.out.println("That is an invalid choice. Please try again. \n");
         }      
         }
     }  

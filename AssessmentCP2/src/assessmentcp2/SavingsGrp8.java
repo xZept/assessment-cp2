@@ -26,7 +26,7 @@ public class SavingsGrp8 extends AccountGrp8 {
     // Displays the balance for the balance inquiry
     public void displayBalance(){
         System.out.println("Balance Inquiry Transaction");
-        System.out.println("The current Balance is " + balance);
+        System.out.println("The current Balance is " + balance +" \n");
     }
     
     // Displays the balance for withdrawal/deposit transactions
@@ -36,6 +36,7 @@ public class SavingsGrp8 extends AccountGrp8 {
     }
     
     // Bodies of the abstract methods from AccountGrp8
+    @Override
     public void withdrawAcct() {
         System.out.println("Withdrawal Transaction");
         System.out.print("Enter amount to be withdrawn: ");
@@ -50,6 +51,7 @@ public class SavingsGrp8 extends AccountGrp8 {
         System.out.println("Your current balance in your savings account is " + balance + ".");
     }
     
+    @Override
     public void depositAcct() {
         System.out.println("Deposit Transaction");
         System.out.print("Enter amount to be deposited: ");
@@ -61,11 +63,6 @@ public class SavingsGrp8 extends AccountGrp8 {
     
     // Checks if the amount is within the balance
     public boolean checkAmount(double amount, double balance) {
-        if (amount > balance) {
-            return false;
-        }
-        else {
-            return true;
-        }
+        return amount <= balance;
     }
 }
