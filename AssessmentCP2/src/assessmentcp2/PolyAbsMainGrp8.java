@@ -8,7 +8,6 @@ public class PolyAbsMainGrp8 {
         Scanner scan = new Scanner(System.in);
         SavingsGrp8 obj = new SavingsGrp8(); // Object for SavingsGrp8
         
-        while (true) {
         System.out.println("""
                            Banking Menu
                            [1] Banking Information
@@ -22,27 +21,27 @@ public class PolyAbsMainGrp8 {
         System.out.print("\n"); // Whitespace
         // Perform the action depending on the user's choice
         switch (choice) {
-            case 1 -> { 
+            case 1: 
                 System.out.println("Account Information");
                 System.out.println("Account Name: " + obj.getAccName());
                 System.out.println("Account Number: " + obj.getAccNum());
                 System.out.println("Address: " + obj.getAdd());
-                }
-            case 2 -> obj.displayBalance();
-            case 3 -> {
+                break;
+            case 2:
+                obj.displayBalance();
+                break;
+            case 3:
                 obj.withdrawAcct();
-                System.exit(0);
-                }
-            case 4 -> {
+                break;
+            case 4:
                 obj.depositAcct();
-                System.exit(0);
-                }
-            case 5 -> {
+                break;
+            case 5:
                 System.out.println("Thank you for using our service!");
-                System.exit(0);
-                }
-            default -> System.out.println("That is an invalid choice. Please try again. \n");
+                break;
+            default:
+                System.out.println("That is an invalid choice. Please try again.");
+                break;
         }      
-        }
     }  
 }
